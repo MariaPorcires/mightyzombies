@@ -17,11 +17,17 @@ function MenuPAGE() {
         getProducts();
     }, []);
 
-    const displayAllCoffee = allCoffee.map(OneCoffee=>{
+    function handleClick() {
+        console.log(target.value);
+        //const userCoffee = event.target.value;
+        //userCoffee ? console.log(userCoffee) : console.log('den e tom');
+    }
+
+    const displayAllCoffee = allCoffee.map(OneCoffee => {
         return(
-            <section>
-                <h1>{OneCoffee.title}</h1>
-                <h5>{OneCoffee.desc}</h5>
+            <section onClick= { handleClick } value={OneCoffee.title} >
+                <h1 value="KAFFEEEEEEEEE">{OneCoffee.title}</h1>
+                <h5 value="KAFFEEEEEEEEE">{OneCoffee.desc}</h5>
             </section>
         )
     })

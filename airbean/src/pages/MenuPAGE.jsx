@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import MenuITEM from '../components/menuitem/MenuITEM';
+import './MenuPAGE.css'
 
 function MenuPAGE() {
     //HÄR FETCHAR VI!!!!! OCH DISPLAYAR SKITEN UR ALL KAFFE
@@ -26,7 +27,7 @@ function MenuPAGE() {
 
 
   return (
-    <div>{displayAllCoffee}</div>
+    <div className='menuPage'>{displayAllCoffee}</div>
   )
 }
 

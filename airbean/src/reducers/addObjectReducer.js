@@ -1,9 +1,18 @@
 import React from 'react'
 
-function addObjectReducer() {
-  return (
-    <div>addObjectReducer</div>
-  )
+const userChoiceARRAY = {
+    array: [],
 }
 
-export default addObjectReducer
+const addObjectReducer = (state = userChoiceARRAY, action) => {
+    switch (action.type) {
+        case 'ADD_OBJECT':
+            return{
+                ...state,
+                array: state.array + action.payload
+            }
+
+    }
+}
+
+export default addObjectReducer;

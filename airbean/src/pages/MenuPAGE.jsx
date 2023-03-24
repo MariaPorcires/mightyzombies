@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import MenuITEM from '../components/menuitem/MenuITEM';
 
 function MenuPAGE() {
     //HÄR FETCHAR VI!!!!! OCH DISPLAYAR SKITEN UR ALL KAFFE
@@ -17,18 +18,9 @@ function MenuPAGE() {
         getProducts();
     }, []);
 
-    function handleClick() {
-        console.log(target.value);
-        //const userCoffee = event.target.value;
-        //userCoffee ? console.log(userCoffee) : console.log('den e tom');
-    }
-
     const displayAllCoffee = allCoffee.map(OneCoffee => {
         return(
-            <section onClick= { handleClick } value={OneCoffee.title} >
-                <h1 value="KAFFEEEEEEEEE">{OneCoffee.title}</h1>
-                <h5 value="KAFFEEEEEEEEE">{OneCoffee.desc}</h5>
-            </section>
+            <MenuITEM coffee={OneCoffee}/>
         )
     })
 

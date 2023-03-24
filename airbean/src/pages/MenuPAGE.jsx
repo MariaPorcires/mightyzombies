@@ -8,17 +8,22 @@ function MenuPAGE() {
 
     useEffect(()=>{
         async function getProducts(){
-            const response = await fetch('www.hkadlkdsfjk.se')
+            const response = await fetch('https://airbean.awesomo.dev/api/beans')
             const data = await response.json();
-
-            setAllCoffee(data.allCoffee);
+            console.log(data.menu)
+            setAllCoffee(data.menu);
         }
 
         getProducts();
     }, []);
 
-    const displayAllCoffee = allCoffee.map(oneCoffee =>{
-        <h1>oneCoffee.name</h1> //obs preliminär parameter
+    const displayAllCoffee = allCoffee.map(OneCoffee=>{
+        return(
+            <section>
+                <h1>{OneCoffee.title}</h1>
+                <h5>{OneCoffee.desc}</h5>
+            </section>
+        )
     })
 
 

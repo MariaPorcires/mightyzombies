@@ -30,7 +30,10 @@ function MenuPAGE() {
     }
 
   return (
-    <div className='menuPage'>{displayAllCoffee}</div>
+    <main className='menuPage'>
+        <h1 className='menuPage__title'>Menu</h1>
+        <div>{displayAllCoffee}</div>
+    </main>
   )
 }
 

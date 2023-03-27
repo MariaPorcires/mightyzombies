@@ -13,7 +13,11 @@ function MenuPAGE() {
             const data = await response.json();
             console.log(data.menu)
             setAllCoffee(data.menu);
-        }
+        };
+
+            //Här är koden för post
+            const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', data: bean} );
+            const data = await response.json();
 
         getProducts();
     }, []);

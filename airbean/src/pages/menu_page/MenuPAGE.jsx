@@ -15,10 +15,6 @@ function MenuPAGE() {
             setAllCoffee(data.menu);
         };
 
-            //Här är koden för post
-            const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', data: bean} );
-            const data = await response.json();
-
         getProducts();
     }, []);
 
@@ -28,6 +24,10 @@ function MenuPAGE() {
         )
     })
 
+    async function saveOrder(order) {
+        const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', data: order} );
+        const data = await response.json();
+    }
 
   return (
     <div className='menuPage'>{displayAllCoffee}</div>

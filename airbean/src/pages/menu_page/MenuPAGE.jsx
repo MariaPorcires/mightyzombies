@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import MenuITEM from '../components/menuitem/MenuITEM';
+import MenuITEM from '../../components/menuitem/MenuITEM'
 import './MenuPAGE.css'
 
 function MenuPAGE() {

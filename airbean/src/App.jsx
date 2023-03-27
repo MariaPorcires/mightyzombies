@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useDispatch } from 'react-redux'
-import MenuPAGE from './pages/MenuPAGE'
+import MenuPAGE from './pages/menu_page/MenuPAGE.jsx'
 
 
 function App() {

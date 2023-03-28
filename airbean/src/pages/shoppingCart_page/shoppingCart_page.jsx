@@ -11,6 +11,8 @@ function ShoppingCart_page() {
       <p className='cart__price'>49 kr</p>
       <p className='cart__total'>Total</p>
 
+      <button className='cart__button'>Take my money!</button>
+
     </div>
   )
 }

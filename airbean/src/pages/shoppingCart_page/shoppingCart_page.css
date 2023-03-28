@@ -45,3 +45,16 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.cart__button {
+    border-radius: 3rem;
+    background-color: black;
+    color:white;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

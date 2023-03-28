@@ -25,7 +25,7 @@ function MenuPAGE() {
     })
 
     async function saveOrder(order) {
-        const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', data: order} );
+        const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', body: order} );
         const data = await response.json();
     }
 
@@ -33,5 +33,3 @@ function MenuPAGE() {
     <div className='menuPage'>{displayAllCoffee}</div>
   )
 }
-
-export default MenuPAGE

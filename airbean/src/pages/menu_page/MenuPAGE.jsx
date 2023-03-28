@@ -30,3 +30,4 @@ function MenuPAGE() {
     <div className='menuPage'>{displayAllCoffee}</div>
   )
 }
+export default MenuPAGE

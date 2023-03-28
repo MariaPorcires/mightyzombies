@@ -21,7 +21,7 @@ function MenuPAGE() {
 
     const displayAllCoffee = allCoffee.map(OneCoffee => {
         return(
-            <MenuITEM coffee={OneCoffee}/>
+            <MenuITEM key={OneCoffee.id} coffee={OneCoffee}/>
         )
     })
 

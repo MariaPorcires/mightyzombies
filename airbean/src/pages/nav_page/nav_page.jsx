@@ -1,5 +1,6 @@
 import React from 'react'
 import './nav_page.css'
+
 import { Link } from 'react-router-dom'
 
 
@@ -10,6 +11,7 @@ function Nav_page() {
       <Link to={ "/about"}>Vårt kaffe</Link>
       <Link to={"/:orderID"}>Orderstatus</Link>
     </section>
+
   )
 }
 

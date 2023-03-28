@@ -6,6 +6,7 @@ import './MenuPAGE.css'
 function MenuPAGE() {
 
     const [allCoffee, setAllCoffee] = useState([])
+    //const [addItemTest] = props;
 
     useEffect(()=>{
         async function getProducts(){
@@ -20,14 +21,17 @@ function MenuPAGE() {
 
     const displayAllCoffee = allCoffee.map(OneCoffee => {
         return(
-            <MenuITEM coffee={OneCoffee}/>
+            <MenuITEM key={OneCoffee.id} coffee={OneCoffee}/>
         )
     })
 
    
 
   return (
-    <div className='menuPage'>{displayAllCoffee}</div>
+    <main className='menuPage'>
+        <h1 className='menuPage__title'>Menu</h1>
+        <div>{displayAllCoffee}</div>
+    </main>
   )
 }
 export default MenuPAGE

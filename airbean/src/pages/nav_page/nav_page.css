@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 4rem;
+   
+    height: 100%;
+    font-family: "PT Serif", serif;
+    font-size: 32px;
+    font-weight: bold; 
+    background-color: black;   
+  }
+
+ a {
+    color: rgb(240, 240, 240);
+  }
+    
+@media screen and (max-width: 600px) {
+    .Nav_page{
+      width: 200px;
+    }
+}
+

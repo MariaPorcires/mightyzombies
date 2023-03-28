@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react'
 import MenuITEM from '../../components/menuitem/MenuITEM'
 import './MenuPAGE.css'
 
-function MenuPAGE() {
+function MenuPAGE(props) {
 
     const [allCoffee, setAllCoffee] = useState([])
+    const [addItemTest] = props;
 
     useEffect(()=>{
         async function getProducts(){

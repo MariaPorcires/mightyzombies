@@ -11,7 +11,6 @@ const addObjectReducer = (state = userChoiceARRAY, action) => {
                 ...state,
                 array: state.array + action.payload
             }
-
     }
 }
 

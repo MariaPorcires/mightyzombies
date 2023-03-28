@@ -8,11 +8,14 @@ import Nav_page from './pages/nav_page/nav_page'
 import OrderStatus_page from './pages/orderStatus_page/orderStatus_page'
 import ShoppingCart_page from './pages/shoppingCart_page/shoppingCart_page'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { addObject } from './actions/addObject'
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MenuPAGE/>
+    element: <MenuPAGE />
   },
   {
     path: "/about",

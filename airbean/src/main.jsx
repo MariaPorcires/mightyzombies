@@ -8,7 +8,7 @@ import addObjectReducer from './reducers/addObjectReducer'
 
 const store = legacy_createStore(
   addObjectReducer,
-  window.REDUX_DEVTOOLS_EXTENSION && window.REDUX_DEVTOOLS_EXTENSION()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() 
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(

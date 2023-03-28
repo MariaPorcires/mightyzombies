@@ -1,4 +1,3 @@
-
 const userChoiceARRAY = {
     order: [],
 }
@@ -10,6 +9,7 @@ const addObjectReducer = (state = userChoiceARRAY, action) => {
     
             const totalOrder = state.order.concat(action.payload);
             console.log(totalOrder);
+
             console.log(userChoiceARRAY);
 
             return {

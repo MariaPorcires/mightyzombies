@@ -10,16 +10,12 @@ import ShoppingCart_page from './pages/shoppingCart_page/shoppingCart_page'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { addObject } from './actions/addObject'
 
-//const dispatch = useDispatch();
 
-/*function addItemTest(){
-  dispatch(addObject("här är en order!?!?"))
-}*/
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MenuPAGE /*addItemTest={addItemTest}*//>
+    element: <MenuPAGE />
   },
   {
     path: "/about",

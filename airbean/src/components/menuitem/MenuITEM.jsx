@@ -6,7 +6,6 @@ import { addObject } from '../../actions/addObject';
 
 function MenuITEM(props) {
     const {title, desc, price} = props.coffee;
-
     const dispatch = useDispatch();
 
     const order = [{

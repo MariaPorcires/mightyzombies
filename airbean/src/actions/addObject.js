@@ -1,4 +1,3 @@
-
 function addObject(value) {
   console.log(value);
   return {

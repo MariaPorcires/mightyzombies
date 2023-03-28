@@ -8,7 +8,6 @@ import OrderStatus_page from './pages/orderStatus_page/orderStatus_page'
 import ShoppingCart_page from './pages/shoppingCart_page/shoppingCart_page'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-
 const router = createBrowserRouter([
   {
     path: "/",

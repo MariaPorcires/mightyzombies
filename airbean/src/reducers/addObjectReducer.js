@@ -1,5 +1,4 @@
 
-
 const userChoiceARRAY = {
     order: [],
 }
@@ -9,8 +8,8 @@ const addObjectReducer = (state = userChoiceARRAY, action) => {
     switch (action.type) {
         case 'ADD_OBJECT':
     
-            const totalOrder = state.order.concat([...state.order], action.payload);
-            console.log(state);
+            const totalOrder = state.order.concat(action.payload);
+            console.log(totalOrder);
             console.log(userChoiceARRAY);
 
             return {

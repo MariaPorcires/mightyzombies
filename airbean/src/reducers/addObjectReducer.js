@@ -1,16 +1,22 @@
-import React from 'react'
-
 const userChoiceARRAY = {
-    array: [],
+    order: [],
 }
 
 const addObjectReducer = (state = userChoiceARRAY, action) => {
+    console.log(action.payload);
     switch (action.type) {
         case 'ADD_OBJECT':
-            return{
+
+            const totalOrder = state.order.concat([...state.order], action.payload);
+            console.log(state);
+            console.log(userChoiceARRAY);
+
+            return {
                 ...state,
-                array: state.array + action.payload
+                order: totalOrder
             }
+        default:
+            return state
     }
 }
 

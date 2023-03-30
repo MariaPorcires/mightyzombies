@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <OrderStatus_page/>
   },
   {
-    path: "/shoppingCart", //kanske också behöver en :ID ? för användarens personliga lista
+    path: "/shoppingCart",
     element: <ShoppingCart_page/>
   }
 ])

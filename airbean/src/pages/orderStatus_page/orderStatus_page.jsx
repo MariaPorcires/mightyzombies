@@ -22,8 +22,8 @@ function OrderStatus_page() {
   
   return (
     <div>
-      <h4>{status.eta}</h4>
-      <h4>{orderNr}</h4>
+      {orderNr ? <h4>{status.eta}</h4> : <h4>{status.message}</h4>}
+      {orderNr ? <h5>{orderNr}</h5> : null}
     </div>
   )
 }

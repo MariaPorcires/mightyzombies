@@ -3,8 +3,11 @@ import './shoppingCart_page.css'
 //import { userChoiceARRAY } from '../../reducers/addObjectReducer';
 import UserchoiceITEM from '../../components/UserchoiceITEM/UserchoiceITEM';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 function ShoppingCart_page() {
+
+  const navigate = useNavigate();
 
   const [orderNumber, setOrder] = useState();
 
@@ -12,14 +15,12 @@ function ShoppingCart_page() {
     console.log(orderNumber)
 
   const order = useSelector(state => state.order)
-  console.log(order)
 
   const displayOrder = order.map(function (item){
     console.log(item)
     return (<UserchoiceITEM order={item}/>)
-  }) //MAP-function som loopar igenom ordern från userChoiceITEM*/
+  })
 
-  //funktion som plussar ihop alla priser med allt i arrayen och returnerar priset
   useEffect(()=>{
     async function getOrder(){
       const body = {
@@ -39,16 +40,31 @@ function ShoppingCart_page() {
     }
     getOrder();
   }, []);
-  
+
+  let totalPrice = 0;
+
+  function price() {
+    order.forEach(order => {
+      totalPrice = totalPrice + order.price
+    })
+    return (totalPrice)
+  }
+    totalPrice = price()
+    console.log(totalPrice);
+
+  function handleClick(){
+    console.log(orderNumber.eta)
+    console.log(orderNumber.orderNr);
+    navigate('/orderstatus', { state: { order: orderNumber } }); 
+  }
+
   return (
     <div className='Cart'>
       <h2 className='cart__title'>Din beställning</h2>
         {displayOrder}
-      <p className='cart__price'></p>
-      <p className='cart__total'>Total</p>
-
-      <button className='cart__button'>Take my money!</button>
-
+      
+      <p className='cart__total'>Totalt: {totalPrice}</p>
+      <button className='cart__button' onClick={handleClick}>Take my money!</button>
     </div>
   )
 }

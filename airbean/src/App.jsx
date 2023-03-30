@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <Nav_page />
   },
   {
-    path: "/:orderID",
+    path: "/orderstatus",
     element: <OrderStatus_page/>
   },
   {

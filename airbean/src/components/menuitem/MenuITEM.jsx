@@ -9,17 +9,15 @@ function MenuITEM(props) {
     const dispatch = useDispatch();
 
     const order = [{
-        title: title,
+        name: title,
         price: price
     }]
 
     function addItemTest(order){
-        console.log(order);
         dispatch(addObject(order))
     }
 
     function handleClick(){
-        console.log(order);
         addItemTest(order)
     }
 

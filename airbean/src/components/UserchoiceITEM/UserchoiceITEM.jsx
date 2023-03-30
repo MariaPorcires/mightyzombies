@@ -3,11 +3,11 @@
 
 function UserchoiceITEM(props) {
     console.log(props.order)
-    const {title, price} = props.order;
+    const {name, price} = props.order;
   return (
     <div>
         <article>
-            <h1>{title}</h1> 
+            <h1>{name}</h1> 
             <h2>{price}</h2>
         </article>
     </div>

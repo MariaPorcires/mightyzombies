@@ -29,6 +29,7 @@ function MenuPAGE() {
 
 
 
+
   return (
     <main className='menuPage'>
         <Header />
@@ -38,5 +39,4 @@ function MenuPAGE() {
     </main>
   )
 }
-
 export default MenuPAGE

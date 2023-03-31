@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    background-color: rgb(38, 19, 19);
+    
 }
 
 .nav {
@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(38, 19, 19);
 }
 
 .nav__menu {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from "react-router-dom"
+import { useLocation, Link } from "react-router-dom"
 import { useEffect, useState } from 'react';
 
 function OrderStatus_page() {
@@ -20,29 +20,18 @@ function OrderStatus_page() {
   getStatus();
   }, [])
   
-  return (
-
-    <div>OrderStatus_page !! shit asså</div>
-    
-   
-  ) 
-
-  function foto() {
-    document.getElementById();
   
 
     return (
       <section className= 'orderStatus' >
-      <p className='order__nr'>ordernumber</p>
+      {orderNr ? <h5>{orderNr}</h5> : null}
       <img src='\src\assets\assets\graphics\drone.svg' alt='drone' />
-      <h1 className='order__heading'>Your order is on its way!</h1>
+      {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1>{status.message}</h1>}
+      {orderNr ? <h4>{status.eta} min</h4> : null}
       <Link to='"/"' className='order__button'>Ok, cool!</Link>
       </section>
     )
-  }
-
 }
-
   
 
 

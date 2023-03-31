@@ -57,7 +57,7 @@ function ShoppingCart_page() {
     console.log(orderNumber.orderNr);
     navigate('/orderstatus', { state: { order: orderNumber } }); 
   }
-
+  saveOrder();
   return (
     <div className='Cart'>
       <h2 className='cart__title'>Din beställning</h2>
@@ -71,7 +71,7 @@ function ShoppingCart_page() {
     const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', body: order} );
     const data = await response.json();
 }
-saveOrder();
+
 }
 
 export default ShoppingCart_page

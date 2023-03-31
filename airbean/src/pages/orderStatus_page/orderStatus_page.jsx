@@ -20,12 +20,21 @@ function OrderStatus_page() {
   getStatus();
   }, [])
   
-  return (
-    <div>
-      {orderNr ? <h4>{status.eta}</h4> : <h4>{status.message}</h4>}
+  
+
+    return (
+      <section className= 'orderStatus' >
       {orderNr ? <h5>{orderNr}</h5> : null}
-    </div>
-  )
+      <img src='\src\assets\assets\graphics\drone.svg' alt='drone' />
+      {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1>{status.message}</h1>}
+      {orderNr ? <h4>{status.eta}</h4> : null}
+      <Link to='"/"' className='order__button'>Ok, cool!</Link>
+      </section>
+    )
+
 }
+
+  
+
 
 export default OrderStatus_page

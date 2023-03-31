@@ -27,7 +27,6 @@ function MenuPAGE() {
     })
 
 
-
   return (
     <main className='menuPage'>
         <Link to="/shoppingCart">KLICKA HÄR FÖR KUL GREJER LOL</Link>
@@ -36,5 +35,4 @@ function MenuPAGE() {
     </main>
   )
 }
-
 export default MenuPAGE

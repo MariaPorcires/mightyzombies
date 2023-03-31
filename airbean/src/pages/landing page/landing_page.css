@@ -1,0 +1,36 @@
+.landing_page {
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-height: 100vh;
+    background-color: var(--darkGreen);
+  }
+  
+  .landing-slider__right {
+    margin-left: auto;
+    margin-right: 0;
+    height: 100vh;
+ 
+  }
+  
+  .landing-slider__left {
+    margin-left: 0;
+    margin-right: auto;
+    height: 100vh;
+  }
+  
+  .landing-__logo {
+    position: absolute;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .landing_page{
+      width: 200px;
+    }
+  }
+  
+ 

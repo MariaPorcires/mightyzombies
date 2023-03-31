@@ -1,20 +1,21 @@
 import React from 'react'
 import './nav_page.css'
 
+import { Link } from 'react-router-dom'
+
+
 function Nav_page() {
   return (
-    <div className='nav'>
-      
-      <h2 className='nav_menu'>
-        Meny
-        Vårt kaffe
-        Orderstatus
-      </h2>
 
+    <section className='navigation'>
+      <article className='nav__links'>
+      <Link to={"/"}>Meny</Link>
+      <Link to={ "/about"}>Vårt kaffe</Link>
+      <Link to={"/:orderID"}>Orderstatus</Link>
+      </article>
+    </section>
+    
 
-     
-      
-      </div>
   )
 }
 

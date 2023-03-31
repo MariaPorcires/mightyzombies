@@ -9,7 +9,8 @@ function OrderStatus_page() {
   const navigationState = useLocation();
   console.log(navigationState)
   let orderNr;
-  {navigationState.state ? orderNr = navigationState.state.order : orderNr = null}
+  {navigationState.state ? orderNr = navigationState.state.order.orderNr : orderNr = null}
+  console.log(orderNr)
 
   useEffect(()=>{
     async function getStatus(){

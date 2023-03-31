@@ -1,6 +1,16 @@
-.navIcon {
+.header {
     display: flex;
+}
+
+.navIcon {
+    margin-right: auto;
     
+}
+
+.Img {
     
-    
+    background-color: black;
+    width: 50px;
+    border-radius: 50%;
+    padding: 1rem;
 }

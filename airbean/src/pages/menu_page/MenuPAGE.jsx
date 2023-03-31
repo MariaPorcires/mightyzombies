@@ -2,8 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import MenuITEM from '../../components/menuitem/MenuITEM'
 import './MenuPAGE.css'
-import {Link} from 'react-router-dom'
 import Header from '../../components/header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function MenuPAGE() {
 
@@ -35,7 +35,8 @@ function MenuPAGE() {
         <Header />
         
         <h1 className='menuPage__title'>Menu</h1>
-        <div>{displayAllCoffee}</div>
+        <div className='menuPage__text'>{displayAllCoffee}</div>
+        <Footer />
     </main>
   )
 }

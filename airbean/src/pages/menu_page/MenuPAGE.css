@@ -3,4 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #F3E4E1;
+    font-family: 'PT Serif', serif;
+}
+
+.menuPage__text {
+    background-color: #F3E4E1;
+}
+
+.menuPage__title {
+    background-color: #F3E4E1;
 }

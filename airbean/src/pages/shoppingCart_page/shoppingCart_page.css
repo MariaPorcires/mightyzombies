@@ -3,7 +3,7 @@
 
 *{
     box-sizing: border-box;
-    background-color: white;
+    
 }
 
 
@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
 }
 
 .cart__button {

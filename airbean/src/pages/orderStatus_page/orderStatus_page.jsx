@@ -1,25 +1,37 @@
 import React from 'react'
+import { useLocation } from "react-router-dom"
+import { useEffect, useState } from 'react';
 
 function OrderStatus_page() {
-  return (
-    <div>OrderStatus_page !! shit asså</div>
-    
-   
-  ) 
 
-  function foto() {
-    document.getElementById();
+  const [status, setStatus] = useState({});
+
+  const navigationState = useLocation();
+  console.log(navigationState)
+  const {orderNr} = navigationState.state.order;
+
+  useEffect(()=>{
+    async function getStatus(){
+      const response = await fetch(`https://airbean.awesomo.dev/api/beans/order/status/${orderNr}`)
+      const data = await response.json();
+      setStatus(data);
+  }
+  console.log("useEffect!")
+  getStatus();
+  }, [])
+  
   
 
     return (
       <section className= 'orderStatus' >
-      <p className='order__nr'>ordernumber</p>
+      {orderNr ? <h5>{orderNr}</h5> : null}
       <img src='\src\assets\assets\graphics\drone.svg' alt='drone' />
-      <h1 className='order__heading'>Your order is on its way!</h1>
+      {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1>{status.message}</h1>}
+      {orderNr ? <h4>{status.eta}</h4> : null}
       <Link to='"/"' className='order__button'>Ok, cool!</Link>
       </section>
     )
-  }
+
 }
 
   

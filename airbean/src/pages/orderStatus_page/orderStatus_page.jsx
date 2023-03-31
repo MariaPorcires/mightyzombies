@@ -24,7 +24,7 @@ function OrderStatus_page() {
 
     return (
       <section className= 'orderStatus' >
-      {orderNr ? <h5>{orderNr}</h5> : null}
+      Ordernummer: {orderNr ? <h5>{orderNr}</h5> : null}
       <img src='\src\assets\assets\graphics\drone.svg' alt='drone' />
       {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1>{status.message}</h1>}
       {orderNr ? <h4>{status.eta} min</h4> : null}

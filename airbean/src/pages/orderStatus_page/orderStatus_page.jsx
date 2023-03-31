@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation, Link } from "react-router-dom"
 import { useEffect, useState } from 'react';
+import './orderStatus_page.css'
 
 function OrderStatus_page() {
 
@@ -33,9 +34,7 @@ function OrderStatus_page() {
       <Link to='/' className='order__button'>Ok, cool!</Link>
       </section>
     )
-
 }
-
   
 
 

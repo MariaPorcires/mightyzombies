@@ -28,8 +28,6 @@ function MenuPAGE() {
     })
 
 
-
-
   return (
     <main className='menuPage'>
         <Header />

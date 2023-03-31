@@ -8,7 +8,9 @@ function OrderStatus_page() {
 
   const navigationState = useLocation();
   console.log(navigationState)
-  const {orderNr} = navigationState.state.order;
+  let orderNr;
+  {navigationState.state ? orderNr = navigationState.state.order.orderNr : orderNr = null}
+  console.log(orderNr)
 
   useEffect(()=>{
     async function getStatus(){
@@ -24,11 +26,11 @@ function OrderStatus_page() {
 
     return (
       <section className= 'orderStatus' >
-      {orderNr ? <h5>{orderNr}</h5> : null}
+      Ordernummer: {orderNr ? <h5>{orderNr}</h5> : null}
       <img src='\src\assets\assets\graphics\drone.svg' alt='drone' />
       {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1>{status.message}</h1>}
       {orderNr ? <h4>{status.eta} min</h4> : null}
-      <Link to='"/"' className='order__button'>Ok, cool!</Link>
+      <Link to='/' className='order__button'>Ok, cool!</Link>
       </section>
     )
 }

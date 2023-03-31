@@ -31,7 +31,7 @@ function MenuPAGE() {
   return (
     <main className='menuPage'>
         <Header />
-        <Link to="/shoppingCart">KLICKA HÄR FÖR KUL GREJER LOL</Link>
+        
         <h1 className='menuPage__title'>Menu</h1>
         <div>{displayAllCoffee}</div>
     </main>

@@ -14,7 +14,7 @@ h5 {
     background-color: #E5674E;
     font-family: 'PT Serif';
     font-style: normal;
-    font-weight: 500;  
+    font-weight: 200;  
 }
 
 img {
@@ -36,6 +36,10 @@ h1 {
     background-color: #E5674E;
 }
 
+h4 {
+    background-color: #E5674E;
+    font-size: 36px;
+}
 
 .order__button {
     background-color: white;
@@ -49,7 +53,7 @@ h1 {
     text-decoration: none;
     font-family: 'PT Serif';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 24px;
 }
 
@@ -58,3 +62,44 @@ h1 {
       background-color: #E5674E;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

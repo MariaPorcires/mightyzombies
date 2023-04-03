@@ -9,7 +9,7 @@ function Nav_page() {
 
     <section className='navigation'>
       
-      <Link className="nav__links" to={"/"}>Meny</Link>
+      <Link className="nav__links" to={"../"}>Meny</Link>
       <Link className="nav__links" to={"/about"}>Vårt kaffe</Link>
       <Link className="nav__links" to={"/orderstatus"}>Orderstatus</Link>
       

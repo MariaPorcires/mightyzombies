@@ -41,14 +41,3 @@ export default Header
 
 
  
-//<article className="header__Nav"><Link to="/nav"><img className="navIcon" src="./src/assets/assets/graphics/navicon.svg" alt="" /></Link></article>
-//<article className="header__Cart"><Link to="/shoppingCart"><img className="cartIcon" src="./src/assets/assets/graphics/bag.svg" alt="" /></Link></article>
-/*margin: 1rem;
-background-color: white;
-width: 50px;
-height:50px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;*/

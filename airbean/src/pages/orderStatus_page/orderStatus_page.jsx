@@ -26,10 +26,11 @@ function OrderStatus_page() {
 
     return (
       <section className= 'orderStatus' >
-          Ordernummer: {orderNr ? <h5 className="orderStatus__Nr">{orderNr}</h5> : null}
+        <article className='orderStatus__box'>
+          <p className="orderStatus__text">Ordernummer: </p> {orderNr ? <h5 className="orderStatus__Nr">  {orderNr}</h5> : null}</article>
           <img className="order__img" src='\src\assets\assets\graphics\drone.svg' alt='drone' />
       {orderNr ? <h1 className='order__heading'>Din beställning är på väg!</h1> : <h1 className='order__heading'>{status.message}</h1>}
-      {orderNr ? <h4 className="order__min">{status.eta} min</h4> : null}
+      {orderNr ? <h4 className="order__min">{status.eta} minuter</h4> : null}
       <Link to='/' className='order__button'>Ok, cool!</Link>
       </section>
     )

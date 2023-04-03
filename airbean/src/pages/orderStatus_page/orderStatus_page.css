@@ -1,48 +1,56 @@
 .orderStatus{
     background-color: #E5674E;
+    display: flex;
     color: white;
-    font-size: 20px;
     text-align: center;
     flex-direction: column; 
-    height: 700px;
+    height: 825px;
     width: 400px;
-    display: flex;
-    justify-content: space-around;
     align-items: center;   
+    font-family: 'PT Serif';
 
 }
 
+.orderStatus__box {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 4rem;
+    
+}
+
+.orderStatus__text {
+    font-size: 16px;
+}
+
 .orderStatus__Nr {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 200;  
+    font-weight: bold;  
+    font-size: 16px;
 }
 
 
 .order__img {
-    background-color: #E5674E;
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 120%;
-
+    padding: 1rem;
 }
 
 
 .order__heading {
 
-    font-family: 'Work Sans';
+    font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 36px;
     line-height: 120%;
     background-color: #E5674E;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 .order__min {
     background-color: #E5674E;
-    font-size: 36px;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 1rem;
 }
 
 .order__button {
@@ -57,8 +65,9 @@
     text-decoration: none;
     font-family: 'PT Serif';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 24px;
+    margin-top: 6rem;
 }
 
 

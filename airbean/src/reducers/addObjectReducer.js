@@ -8,9 +8,6 @@ const addObjectReducer = (state = userChoiceARRAY, action) => {
         case 'ADD_OBJECT':
 
             const totalOrder = state.order.concat(action.payload);
-            console.log(state);
-            console.log(userChoiceARRAY);
-
             return {
                 ...state,
                 order: totalOrder

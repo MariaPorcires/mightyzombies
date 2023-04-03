@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation, Link } from "react-router-dom"
 import { useEffect, useState } from 'react';
+import './orderStatus_page.css'
 
 function OrderStatus_page() {
 
@@ -9,7 +10,7 @@ function OrderStatus_page() {
   const navigationState = useLocation();
   console.log(navigationState)
   let orderNr;
-  {navigationState.state ? orderNr = navigationState.state.order : orderNr = null}
+  {navigationState.state ? orderNr = navigationState.state.order.orderNr : orderNr = null}
 
   useEffect(()=>{
     async function getStatus(){

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './shoppingCart_page.css'
 //import { userChoiceARRAY } from '../../reducers/addObjectReducer';
-import UserchoiceITEM from '../../components/UserchoiceITEM/UserchoiceITEM';
+//import UserchoiceITEM from '../../components/UserchoiceITEM/UserchoiceITEM';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 

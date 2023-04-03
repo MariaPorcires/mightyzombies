@@ -2,6 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import MenuITEM from '../../components/menuitem/MenuITEM'
 import './MenuPAGE.css'
+import Header from '../../components/header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function MenuPAGE() {
 
@@ -25,17 +27,19 @@ function MenuPAGE() {
         )
     })
 
-    async function saveOrder(order) {
-        const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', data: order} );
-        const data = await response.json();
-    }
 
   return (
-    <main className='menuPage'>
-        <h1 className='menuPage__title'>Menu</h1>
-        <div>{displayAllCoffee}</div>
-    </main>
+    <section className='menuPage'>
+        
+        <Header />
+        
+
+        <h1 className='menuPage__title'>Meny</h1>
+        <div className='menuPage__text'>{displayAllCoffee}</div>
+        <Footer />
+        
+    </section>
+     
   )
 }
-
 export default MenuPAGE

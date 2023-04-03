@@ -1,0 +1,31 @@
+.landing_page {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background-color: #38846D;
+  }
+  
+  .landing__right {
+    margin-left: auto;
+    margin-right: 0;
+    height: 100vh;
+ 
+  }
+  
+  .landing__left {
+    margin-left: 0;
+    margin-right: auto;
+    height: 100vh;
+  }
+  
+  .landing-__logo {
+    position: absolute;
+  }
+
+  
+ 
+  
+  
+ 

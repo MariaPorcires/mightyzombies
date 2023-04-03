@@ -3,7 +3,6 @@
 
 *{
     box-sizing: border-box;
-    background-color: white;
 }
 
 
@@ -15,6 +14,15 @@
     line-height: 120%;
 }
 
+.cart__price {
+
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+}
+
 .cart__order{
     font-family: 'PT Serif', serif;
     font-style: normal;
@@ -23,13 +31,6 @@
     line-height: 130%;
 }
 
-.cart__price {
-    font-family: 'PT Serif', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 130%;
-}
 
 .cart__total {
     font-family: 'PT Serif', serif;
@@ -41,7 +42,61 @@
 
 .Cart{
     display: flex;
+    position: absolute;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    top: 0;
     flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    margin: 5.2rem 2rem;
+    border: 1px solid black;
+    width: 335px;
+    min-height: 450px;
+}
+
+.cart__title {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.cart__text {
+    align-self: baseline;
+    line-height: 50px;
+}
+
+.cart__total {
+    display: flex;
+    align-self: baseline;
+    
+    font-size: 24px;
+}
+
+.cart__dots {
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.400);
+    width: 147px;
+}
+
+.cart__moms {
+    font-family: 'Work Sans';
+    align-self: baseline;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #222221;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.cart__button {
+    border-radius: 3rem;
+    background-color: black;
+    color:white;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+    
 }

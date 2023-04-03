@@ -29,13 +29,17 @@ function MenuPAGE() {
 
 
   return (
-    <main className='menuPage'>
+    <section className='menuPage'>
+        
         <Header />
         
-        <h1 className='menuPage__title'>Menu</h1>
+
+        <h1 className='menuPage__title'>Meny</h1>
         <div className='menuPage__text'>{displayAllCoffee}</div>
         <Footer />
-    </main>
+        
+    </section>
+     
   )
 }
 export default MenuPAGE

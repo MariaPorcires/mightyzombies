@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    box-sizing: border-box;
-}
 
-.menuitem{
+.menuitem {
+    background-color: #F3E4E1;
     padding: 1rem;
     cursor: pointer;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     min-width: 360px;
 }
 
-.menuitem__img{
+.menuitem__img {
     background-color: rgba(47, 41, 38, 1);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
     border-radius: 50%;
@@ -23,10 +21,12 @@
     max-height: 32px;
     padding: 0.5rem;
     margin: 1rem;
+    
 }
 
-.menuitem__title{
+.menuitem__title { 
     font-family: 'PT Serif', serif;
+    background-color: #F3E4E1;
     font-style: normal;
     font-weight: 700;
     font-size: 23px;
@@ -40,4 +40,9 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 130%;
+    background-color: #F3E4E1;
+}
+
+.menuitem__price {
+    background-color: #F3E4E1;
 }

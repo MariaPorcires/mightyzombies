@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './shoppingCart_page.css'
 //import { userChoiceARRAY } from '../../reducers/addObjectReducer';
-import UserchoiceITEM from '../../components/UserchoiceITEM/UserchoiceITEM';
+//import UserchoiceITEM from '../../components/UserchoiceITEM/UserchoiceITEM';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +18,14 @@ function ShoppingCart_page() {
 
   const displayOrder = order.map(function (item){
     console.log(item)
-    return (<UserchoiceITEM order={item}/>)
+    return (
+      <section className='cart__products'>
+        <h1 className='cart__text'>{item.name}</h1>
+        <p className='cart__price'>{item.price}</p>
+      </section>
+    )
+    
+    //(<UserchoiceITEM order={item}/>)
   })
 
   useEffect(()=>{
@@ -57,21 +64,29 @@ function ShoppingCart_page() {
     console.log(orderNumber.orderNr);
     navigate('/orderstatus', { state: { order: orderNumber } }); 
   }
-  saveOrder();
+
+  //saveOrder();
+
+
   return (
     <div className='Cart'>
       <h2 className='cart__title'>Din beställning</h2>
-        {displayOrder}
+        <ul className='cart__text'>{displayOrder}</ul>
       
-      <p className='cart__total'>Totalt: {totalPrice}</p>
+      <p className='cart__total'>Totalt:<p className="cart__dots"> </p>{totalPrice} kr</p>
+      <p className='cart__moms'>inkl. moms + drönarleverans</p>
       <button className='cart__button' onClick={handleClick}>Take my money!</button>
     </div>
   )
-  async function saveOrder(order) {
-    const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', body: order} );
-    const data = await response.json();
-}
+
+  //async function saveOrder(order) {
+    //const response = await fetch('https://airbean.awesomo.dev/api/beans/order', { method: 'POST', body: order} );
+    //const data = await response.json();
 
 }
+
+
+
+
 
 export default ShoppingCart_page

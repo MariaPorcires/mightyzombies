@@ -8,11 +8,11 @@ function Nav_page() {
   return (
 
     <section className='navigation'>
-      <article className='nav__links'>
-      <Link to={"/"}>Meny</Link>
-      <Link to={"/about"}>Vårt kaffe</Link>
-      <Link to={"/orderstatus"}>Orderstatus</Link>
-      </article>
+      
+      <Link className="nav__links" to={"/"}>Meny</Link>
+      <Link className="nav__links" to={"/about"}>Vårt kaffe</Link>
+      <Link className="nav__links" to={"/orderstatus"}>Orderstatus</Link>
+      
     </section>
     
 

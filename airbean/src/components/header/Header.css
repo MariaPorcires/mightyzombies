@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #F3E4E1;
+    min-width: 400px;
+    min-height: 112px;
+    background-size: cover;
     min-width: 375px;
     min-height: 112px;
     background-size: cover;
@@ -10,20 +14,20 @@
 }
 
 .navIcon {
-   margin-top: 0.2rem;
     
 }
 
 .header__Nav {
-    margin: 1rem;
-    background-color: white;
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: white;
+    margin: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    height: 50px;
+    width: 50px;
 }
 
 .header__Cart {
@@ -34,6 +38,8 @@
     background-color: black;
     width: 50px;
     height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
     border-radius: 50%;
     position: relative;
 }

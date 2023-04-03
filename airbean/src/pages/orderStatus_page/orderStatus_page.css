@@ -4,20 +4,22 @@
     font-size: 20px;
     text-align: center;
     flex-direction: column; 
-    height: 100vh;
+    height: 700px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;   
 
 }
-h5 {
-    background-color: #E5674E;
+
+.orderStatus__Nr {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 200;  
 }
 
-img {
+
+.order__img {
     background-color: #E5674E;
     font-family: 'PT Serif';
     font-style: normal;
@@ -27,7 +29,9 @@ img {
 
 }
 
-h1 {
+
+.order__heading {
+
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -36,7 +40,7 @@ h1 {
     background-color: #E5674E;
 }
 
-h4 {
+.order__min {
     background-color: #E5674E;
     font-size: 36px;
 }
@@ -57,11 +61,6 @@ h4 {
     font-size: 24px;
 }
 
-@media screen and (max-width: 600px) {
-    .orderStatus {
-      background-color: #E5674E;
-    }
-}
 
 
 

@@ -3,4 +3,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #F3E4E1;
+    font-family: 'PT Serif', serif;
+    width: 400px;
+    
+}
+
+
+.menuPage__title {
+    background-color: #F3E4E1;
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
 }

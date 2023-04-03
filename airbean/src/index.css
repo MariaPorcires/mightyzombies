@@ -1,7 +1,8 @@
-*{
-    box-sizing: border-box;
-}
 
-body{
-    background-color: #F3E4E1;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

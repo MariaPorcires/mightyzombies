@@ -4,6 +4,7 @@ import MenuITEM from '../../components/menuitem/MenuITEM'
 import './MenuPAGE.css'
 import {Link} from 'react-router-dom'
 import Header from '../../components/header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function MenuPAGE() {
 
@@ -28,15 +29,16 @@ function MenuPAGE() {
     })
 
 
-
-
   return (
-    <main className='menuPage'>
+    <section className='menuPage'>
+        
         <Header />
         
-        <h1 className='menuPage__title'>Menu</h1>
-        <div>{displayAllCoffee}</div>
-    </main>
+        <h1 className='menuPage__title'>Meny</h1>
+        <div className='menuPage__text'>{displayAllCoffee}</div>
+        <Footer />
+        
+    </section>
   )
 }
 export default MenuPAGE

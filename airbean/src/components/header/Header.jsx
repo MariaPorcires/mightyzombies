@@ -8,6 +8,7 @@ import ShoppingCart_page from "../../pages/shoppingCart_page/shoppingCart_page";
 
 
 
+
 const Header = () => {
 
     const [isNavOpen, setNavOpen] = useState(false);
@@ -29,9 +30,11 @@ const Header = () => {
             <div onClick={ openNav } className="header__Nav"><img className="navIcon" src={nav}/></div>
             <div onClick={ openCart } className="header__Cart"><img className="cartIcon" src="./src/assets/assets/graphics/bag.svg" /></div>
             
+
            {isNavOpen ? <Nav_page /> : null }
            {isCartOpen ? <ShoppingCart_page /> : null}
-        
+    
+
         </section>
 
     )

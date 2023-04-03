@@ -11,11 +11,13 @@
     align-items: center;   
 
 }
+
 .orderStatus__Nr {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 200;  
 }
+
 
 .order__img {
     background-color: #E5674E;
@@ -27,7 +29,9 @@
 
 }
 
+
 .order__heading {
+
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -56,8 +60,6 @@
     font-weight: 500;
     font-size: 24px;
 }
-
-
 
 
 

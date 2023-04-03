@@ -33,9 +33,7 @@ function OrderStatus_page() {
       <Link to='/' className='order__button'>Ok, cool!</Link>
       </section>
     )
-
 }
-
   
 
 

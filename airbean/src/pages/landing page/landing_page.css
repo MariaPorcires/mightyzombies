@@ -1,22 +1,20 @@
 .landing_page {
-    z-index: 999;
-    overflow: hidden;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     max-height: 100vh;
-    background-color: var(--darkGreen);
+    background-color: #38846D;
   }
   
-  .landing-slider__right {
+  .landing__right {
     margin-left: auto;
     margin-right: 0;
     height: 100vh;
  
   }
   
-  .landing-slider__left {
+  .landing__left {
     margin-left: 0;
     margin-right: auto;
     height: 100vh;
